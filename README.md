@@ -12,50 +12,54 @@
 
 ---
 
-### 📝 Descripción de la Solución
-Este proyecto consiste en la implementación de una aplicación modular en Python diseñada bajo el paradigma de la **Programación Orientada a Objetos (POO)** para la empresa **Software FJ**. 
-
-La aplicación gestiona clientes, servicios y reservas sin utilizar bases de datos externas, apoyándose en estructuras de datos en memoria, control riguroso de excepciones personalizadas y auditoría de operaciones mediante archivos de registro (`.log`).
+### 📝 Descripción General
+Aplicación modular desarrollada en Python bajo el paradigma de la **Programación Orientada a Objetos (POO)** para la empresa **Software FJ**. El sistema gestiona clientes, servicios tecnológicos y reservas en memoria (sin bases de datos externas), garantizando la estabilidad operativa mediante control riguroso de excepciones personalizadas y auditoría continua de eventos.
 
 ---
 
-### ⚙️ Principios de POO y Requerimientos Implementados
+### ⚙️ Arquitectura y Principios de POO Implementados
 
 1. **Encapsulamiento (`ClienteSoftwareFJ`):**
    * Atributos privados (`_cedula`, `_nombre_completo`, `_email`) protegidos mediante decoradores `@property`.
-   * Validaciones estrictas en los setters para evitar campos vacíos o correos con formato inválido.
+   * Setters con validaciones estrictas para impedir registros vacíos o correos sin sintaxis válida (`@` y `.`).
 
 2. **Abstracción y Herencia (`ServicioBase`):**
-   * Clase base abstracta utilizando el módulo `abc`.
-   * Subclases especializadas para las 3 líneas de negocio:
-     * `SalaReuniones`: Incluye cobro por horas y adicionales de catering.
-     * `EquipoTecnologico`: Incluye días de alquiler y seguro de protección.
-     * `ConsultoriaEspecializada`: Incluye cálculo por sesiones y descuento por modalidad remota.
+   * Clase base abstracta utilizando el módulo `abc` (`ABC` y `@abstractmethod`).
+   * Subclases derivadas especializadas para 3 líneas de negocio:
+     * `SalaReuniones`: Cálculo por horas de uso más adicionado opcional por catering.
+     * `EquipoTecnologico`: Tarifas por días de alquiler e inclusión de seguro de protección.
+     * `ConsultoriaEspecializada`: Cobro por sesiones con descuento automático por modalidad remota.
 
 3. **Polimorfismo:**
-   * Cada subclase sobrescribe de forma única el método abstracto `calcular_costo_total()`.
+   * Sobrescritura del método abstracto `calcular_costo_total()` en cada subclase con reglas de negocio diferenciadas.
 
-4. **Manejo de Excepciones Personalizadas:**
-   * Jerarquía de clases derivadas de `Exception`: `ErrorBaseSoftwareFJ`, `ValidacionClienteError`, `ValidacionServicioError` y `GestionReservaError`.
-   * Estructuración de operaciones con bloques `try / except / else / finally`.
+4. **Gestión en Memoria y Agregación (`ControladorSoftwareFJ`):**
+   * Administración de objetos mediante colecciones internas (`list`), cumpliendo la restricción de cero motores de bases de datos.
 
-5. **Auditoría y Logs (`sistema_manjarres.log`):**
-   * Registro automático de eventos de éxito (`logging.info`) y fallos (`logging.error`) con marcas de tiempo.
+5. **Jerarquía de Excepciones Personalizadas:**
+   * Estructura de errores derivados de `Exception`: `ErrorBaseSoftwareFJ`, `ValidacionClienteError`, `ValidacionServicioError` y `GestionReservaError`.
 
-6. **Demostración de Estabilidad:**
-   * Simulación de 10 operaciones consecutivas (combinando datos válidos e inválidos) demostrando la tolerancia a fallos del sistema sin caídas del programa.
+6. **Manejo de Errores y Tolerancia a Fallos (`try / except / else / finally`):**
+   * Bloques de control que capturan anomalías en runtime evitando cierres o caídas del sistema.
+
+7. **Auditoría y Módulo de Logs (`sistema_manjarres.log`):**
+   * Registro automatizado con la librería `logging` de eventos exitosos (`logging.info`) y excepciones (`logging.error`) con estampas de tiempo (`asctime`).
+
+8. **Simulación de Estabilidad (10 Operaciones):**
+   * Demostración con escenarios válidos e inválidos para comprobar el comportamiento del software en producción.
 
 ---
 
 ### 📁 Estructura del Repositorio
-* `ANEXO_3_FASE_4_Manjarres.py`: Código fuente principal de la solución.
-* `sistema_manjarres.log`: Archivo generado automáticamente con el historial de eventos e incidencias.
+* `ANEXO_3_FASE_4_Daniela_Manjarres.py`: Código fuente principal en Python.
+* `sistema_manjarres.log`: Archivo de auditoría generado automáticamente.
 * `README.md`: Documentación técnica del proyecto.
+* `Anexo 3 - Problema a desarrollar Fase 4.pdf`: Guía de requerimientos.
 
 ---
 
 ### 🚀 Instrucciones de Ejecución
-Para ejecutar el script en cualquier entorno con Python 3:
+Para ejecutar la simulación desde la terminal:
 
 ```bash
-python ANEXO_3_FASE_4_Manjarres.py
+python ANEXO_3_FASE_4_Daniela_Manjarres.py
