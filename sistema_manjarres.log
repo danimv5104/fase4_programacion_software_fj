@@ -1,0 +1,39 @@
+2026-11-21 23:12:48,820 | INFO | Cliente dado de alta exitosamente: Cliente ID: 1098765432 | Daniela Manjarres (daniela.manjarres@unad.edu.co)
+2026-11-21 23:12:48,820 | INFO | Finalizó el proceso de alta para el cliente ID: 1098765432
+2026-11-21 23:12:48,820 | ERROR | Error al registrar cliente [1098765433]: Formato de correo electrónico inválido: 'carlos_sin_correo'
+2026-11-21 23:12:48,820 | INFO | Finalizó el proceso de alta para el cliente ID: 1098765433
+2026-11-21 23:12:48,821 | INFO | Reserva registrada satisfactoriamente: Folio #RES-101 | Fecha: 21/11/2026 23:12:48 | Daniela Manjarres | Servicio: Sala Executive VIP | Total: $240,000.00
+2026-11-21 23:12:48,821 | INFO | Finalizó el intento de procesamiento de la reserva #RES-101
+2026-11-21 23:12:48,821 | ERROR | Fallo en parametrización de servicio SR-02: La cantidad de horas debe ser mayor a cero.
+2026-11-21 23:12:48,821 | INFO | Cliente dado de alta exitosamente: Cliente ID: 1012345678 | Laura Sofía Torres (laura.torres@unad.edu.co)
+2026-11-21 23:12:48,821 | INFO | Finalizó el proceso de alta para el cliente ID: 1012345678
+2026-11-21 23:12:48,821 | INFO | Reserva registrada satisfactoriamente: Folio #RES-102 | Fecha: 21/11/2026 23:12:48 | Laura Sofía Torres | Servicio: Servidor Rack 32GB RAM | Total: $400,000.00
+2026-11-21 23:12:48,822 | INFO | Finalizó el intento de procesamiento de la reserva #RES-102
+2026-11-21 23:12:48,822 | ERROR | Fallo al emitir la reserva #RES-103: No se puede vincular una reserva a un cliente inexistente.
+2026-11-21 23:12:48,822 | INFO | Finalizó el intento de procesamiento de la reserva #RES-103
+2026-11-21 23:13:33,918 | INFO | Cliente dado de alta exitosamente: Cliente ID: 1098765432 | Daniela Manjarres (daniela.manjarres@unad.edu.co)
+2026-11-21 23:13:33,919 | INFO | Finalizó el proceso de alta para el cliente ID: 1098765432
+2026-11-21 23:13:33,919 | ERROR | Error al registrar cliente [1098765433]: Formato de correo electrónico inválido: 'carlos_sin_correo'
+2026-11-21 23:13:33,919 | INFO | Finalizó el proceso de alta para el cliente ID: 1098765433
+2026-11-21 23:13:33,919 | INFO | Reserva registrada satisfactoriamente: Folio #RES-101 | Fecha: 21/11/2026 23:13:33 | Daniela Manjarres | Servicio: Sala Executive VIP | Total: $240,000.00
+2026-11-21 23:13:33,919 | INFO | Finalizó el intento de procesamiento de la reserva #RES-101
+2026-11-21 23:13:33,920 | ERROR | Fallo en parametrización de servicio SR-02: La cantidad de horas debe ser mayor a cero.
+2026-11-21 23:13:33,920 | INFO | Cliente dado de alta exitosamente: Cliente ID: 1012345678 | Laura Sofía Torres (laura.torres@unad.edu.co)
+2026-11-21 23:13:33,920 | INFO | Finalizó el proceso de alta para el cliente ID: 1012345678
+2026-11-21 23:13:33,920 | INFO | Reserva registrada satisfactoriamente: Folio #RES-102 | Fecha: 21/11/2026 23:13:33 | Laura Sofía Torres | Servicio: Servidor Rack 32GB RAM | Total: $400,000.00
+2026-11-21 23:13:33,920 | INFO | Finalizó el intento de procesamiento de la reserva #RES-102
+2026-11-21 23:13:33,921 | ERROR | Fallo al emitir la reserva #RES-103: No se puede vincular una reserva a un cliente inexistente.
+2026-11-21 23:13:33,921 | INFO | Finalizó el intento de procesamiento de la reserva #RES-103
+2026-11-21 23:23:44,743 | INFO | Cliente dado de alta exitosamente: Cliente ID: 1098765432 | Daniela Manjarres (daniela.manjarres@unad.edu.co)
+2026-11-21 23:23:44,777 | INFO | Finalizó el proceso de alta para el cliente ID: 1098765432
+2026-11-21 23:23:44,777 | ERROR | Error al registrar cliente [1098765433]: Formato de correo electrónico inválido: 'carlos_sin_correo'
+2026-11-21 23:23:44,777 | INFO | Finalizó el proceso de alta para el cliente ID: 1098765433
+2026-11-21 23:23:44,777 | INFO | Reserva registrada satisfactoriamente: Folio #RES-101 | Fecha: 21/11/2026 23:23:44 | Daniela Manjarres | Servicio: Sala Executive VIP | Total: $240,000.00
+2026-11-21 23:23:44,778 | INFO | Finalizó el intento de procesamiento de la reserva #RES-101
+2026-11-21 23:23:44,778 | ERROR | Fallo en parametrización de servicio SR-02: La cantidad de horas debe ser mayor a cero.
+2026-11-21 23:23:44,778 | INFO | Cliente dado de alta exitosamente: Cliente ID: 1012345678 | Laura Sofía Torres (laura.torres@unad.edu.co)
+2026-11-21 23:23:44,778 | INFO | Finalizó el proceso de alta para el cliente ID: 1012345678
+2026-11-21 23:23:44,778 | INFO | Reserva registrada satisfactoriamente: Folio #RES-102 | Fecha: 21/11/2026 23:23:44 | Laura Sofía Torres | Servicio: Servidor Rack 32GB RAM | Total: $400,000.00
+2026-11-21 23:23:44,778 | INFO | Finalizó el intento de procesamiento de la reserva #RES-102
+2026-11-21 23:23:44,779 | ERROR | Fallo al emitir la reserva #RES-103: No se puede vincular una reserva a un cliente inexistente.
+2026-11-21 23:23:44,779 | INFO | Finalizó el intento de procesamiento de la reserva #RES-103
